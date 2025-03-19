@@ -1,0 +1,21 @@
+[2025-03-18T16:48:07.903+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-18T16:48:07.911+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_hello_world.hello_world manual__2025-03-18T16:48:05.781135+00:00 [queued]>
+[2025-03-18T16:48:07.916+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_hello_world.hello_world manual__2025-03-18T16:48:05.781135+00:00 [queued]>
+[2025-03-18T16:48:07.916+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-18T16:48:07.935+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): hello_world> on 2025-03-18 16:48:05.781135+00:00
+[2025-03-18T16:48:07.937+0000] {standard_task_runner.py:72} INFO - Started process 5238 to run task
+[2025-03-18T16:48:07.940+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'simple_hello_world', 'hello_world', 'manual__2025-03-18T16:48:05.781135+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/hello_world.py', '--cfg-path', '/tmp/tmp1ochr33_']
+[2025-03-18T16:48:07.943+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask hello_world
+[2025-03-18T16:48:07.986+0000] {task_command.py:467} INFO - Running <TaskInstance: simple_hello_world.hello_world manual__2025-03-18T16:48:05.781135+00:00 [running]> on host LAPTOP-QE9ETVF1.
+[2025-03-18T16:48:08.061+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='simple_hello_world' AIRFLOW_CTX_TASK_ID='hello_world' AIRFLOW_CTX_EXECUTION_DATE='2025-03-18T16:48:05.781135+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-18T16:48:05.781135+00:00'
+[2025-03-18T16:48:08.062+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-18T16:48:08.073+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-18T16:48:08.073+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Hello World"']
+[2025-03-18T16:48:08.079+0000] {subprocess.py:99} INFO - Output:
+[2025-03-18T16:48:08.081+0000] {subprocess.py:106} INFO - Hello World
+[2025-03-18T16:48:08.081+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-18T16:48:08.110+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-18T16:48:08.111+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=simple_hello_world, task_id=hello_world, run_id=manual__2025-03-18T16:48:05.781135+00:00, execution_date=20250318T164805, start_date=20250318T164807, end_date=20250318T164808
+[2025-03-18T16:48:08.155+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-18T16:48:08.164+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-18T16:48:08.165+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
