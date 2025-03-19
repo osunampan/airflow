@@ -1,4 +1,4 @@
-Here in this project i am doing hands on work on **Apache Airflow.**
+Hands-on project on **Apache Airflow.**
 1. Install Anaconda
 2. Install wsl ubuntu linux via powershell.
 3. Install conda in ubuntu
